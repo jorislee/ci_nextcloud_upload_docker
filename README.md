@@ -10,6 +10,7 @@
   RUN apt-get update && apt-get install -y \
       apt-utils \
       git \
+      zip \
       unzip \
       wget \
       python3 \
