@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y \
     unzip \
     wget \
     python3 \
+    python3-pip \
+    && pip3 install --upgrade pip \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
-
-RUN python -m pip --no-cache-dir install --upgrade pip
 
 RUN git clone --recursive https://github.com/sioiot/nextcloud-API.git nextcloud_upload \
     && cd nextcloud_upload && pip --no-cache-dir install -r requirements.txt && cd -
