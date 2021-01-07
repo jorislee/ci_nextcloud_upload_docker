@@ -1,5 +1,7 @@
 # nextcloud upload file docker
 
+Based on ubuntu: 18.04 Nextcloud file upload execution script
+
 ## Dockerfile
 
   ``` shell
